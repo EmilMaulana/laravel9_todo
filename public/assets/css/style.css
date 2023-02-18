@@ -1,0 +1,86 @@
+.badan {
+    font-family: 'Poppins', sans-serif;
+}
+/* 
+.baru {
+    font-family: "Varela Round", sans-serif;
+} */
+
+.header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 25%;
+    /* background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+    ); */
+    position: absolute;
+    bottom: 0;
+}
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+/* .nav-link {
+    text-transform: uppercase;
+    font-size: 15px; */
+/* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
+/* color: rgb(46, 43, 43); */
+/* } */
+
+/* .jumbotron .container {
+    color: white;
+    margin-top: 100px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 20%;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+    );
+    position: absolute;
+    bottom: 0;
+} */
+
+/* desktop versi */
+@media (min-width: 992px) {
+    /* .jumbotron {
+        margin-top: -75px;
+    } */
+
+    /* .nav-link {
+        color: white !important;
+    } */
+
+    /* .baposka {
+        color: white !important;
+    } */
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid rgb(28, 206, 250);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3px;
+        margin-bottom: -3px;
+    }
+}
